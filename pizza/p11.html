@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<script>
+			function feedback(){
+			var msg=(document.getElementById("z2").value)
+			if(msg==0)
+			{
+				alert("please tell me your thought");
+				return false;
+			}
+			else
+			{
+				document.getElementById("z2").innerHTML=""
+			}
+			}
+
+	</script>
+	
+		<style>
+			body
+			{
+				background:url(../home.jpg);
+			}
+			.i1
+			{
+				height:300px;
+				width:300px;
+				border-radius:20px;
+			}
+			.d2
+			{
+				float:left;
+				height:100px;
+				width:400px;
+			}
+			.p1
+			{
+				padding:240px;
+			}
+			h4
+			{
+				text-align:center;
+				font-size:30px;
+				
+			}
+			h4:hover
+			{
+			}
+			
+			.p11
+			{
+				border:1px solid;
+				width:280px;
+				background:#fff;
+				padding:10px;
+				margin:15px auto;
+				border-radius:30px;
+				position:relative;
+				height:270px;
+			}
+			.form-items
+				{
+					width:100%;
+				}
+				 .form-items .input.message
+				 {
+					 height:125px;
+					 border-radius:15px;
+					 margin-bottom:30px;
+					 padding:15px;
+					 resize:none;
+				}
+				.form-items .input
+				{
+					width:100%;
+					margin-bottom:12px;
+					padding:15px 40px;
+					box-sizing:border-box;
+					background:#ebeef1;
+					border:0;
+					outline:none;
+					border-radius:30px;
+				}
+				.k1 input[type="submit"]
+				{
+				border:none;
+				outline:none;
+				height:40px;
+				background:#F30;
+				color:#fff;
+				border-radius:15px;
+				font-size:18px;
+				width:250px;
+				
+				}
+				.k1 input[type="submit"]:hover
+				{
+				cursor:pointer;
+				background:#F6C;
+				color:#000;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="post" action="../pizza.html">
+	<div class="d1">
+		<h1 align="center"><u><b>Maxicon pizza</b></u></h1>
+		<div class="d2"><a href="../pizza.html"><img src="IMG-20191203-WA0062.jpg" class="i1"></a></div>
+		<div class="d2" style="padding:15px"><h2>Details:</h2>
+		<p><h3>Place: pizza Hut,Ashram road,ahmedabad gujarat..<br>
+<br>
+			        Price: 290 Rs.</h3></p></div>
+	</div>
+	<div class="p1">
+			<h4>feedback</h4>
+		<div class="p11">
+			<div class="form-items">
+            <textarea  class="input message" cols="30" rows="10" placeholder="Message" id="z2"></textarea>
+            
+        	 </div>
+			 <div class="k1">
+           <input type="submit" value="Submit" onClick="return(feedback());"><br><br>
+
+            </div>
+ 			<div class="k1">
+           <input type="submit" value="Back">
+
+            </div>
+ 
+
+		</div>
+	</div>
+	
+	</form>
+	</body>
+</html>
